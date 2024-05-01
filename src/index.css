@@ -6,3 +6,40 @@
     list-style: none;
     text-decoration: none;
 }
+
+nav{
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    padding: 0 10%;
+    align-items: center;
+}
+
+nav img{
+    position: relative;
+    width: 70px;
+    margin-right: 10px;
+}
+
+nav h2{
+    color: #493d3d;
+    font-size: 30px;
+    font-weight: lighter;
+    
+}
+
+#nav-links{
+    position:relative;
+    left: 38%;
+}
+
+#nav-links li{
+    display: inline-block;
+    margin: 0 0 0 46px;
+}
+
+.upper{
+    min-height: 100vh;
+    width: 100%;
+}
