@@ -17,26 +17,43 @@ nav{
 }
 
 nav img{
-    position: relative;
-    width: 70px;
-    margin-right: 10px;
+    width: 80px;
+    margin-right: 20px;
 }
 
-nav h2{
+#nav-links li:first-child{
+    display: flex;
     color: #493d3d;
     font-size: 30px;
     font-weight: lighter;
-    
+    position: relative;
+    left: -24%;
+    width: 400px;
+}
+
+#nav-links li:first-child:hover{
+    color: #493d3d;
+    background-color: white;
 }
 
 #nav-links{
-    position:relative;
-    left: 38%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
 }
 
 #nav-links li{
     display: inline-block;
+    padding: 0 10px;
     margin: 0 0 0 46px;
+    cursor: pointer;
+}
+
+#nav-links li:hover{
+    background-color: #493d3d;
+    color: white;
+    border-radius: 30%;
 }
 
 .upper{
