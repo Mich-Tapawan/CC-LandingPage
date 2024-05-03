@@ -61,3 +61,36 @@ nav img{
     min-height: 100vh;
     width: 100%;
 }
+
+.sec1{
+    position: absolute;
+    width: 80%;
+    height: 87%;
+    background-color: red;
+    margin: 100px 0 0 10%;
+}
+
+.sec1-left{
+    width: 50%;
+    background-color: blue;
+}
+
+.sec1-left h1{
+    font-family: 'Lalezar', 'serif';
+    font-size: 65px;
+}
+
+.sec1-left h4{
+    font-family: 'Abel', 'serif';
+    font-size: 25px;
+}
+
+.sec1-left button{
+    background-color: #442F2F;
+    color: white;
+    width: 210px;
+    height: 63px;
+    border-radius: 10px;
+    font-size: 26px;
+    font-family: 'Lalezar', 'serif';
+}
