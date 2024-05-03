@@ -87,13 +87,17 @@ nav img{
 }
 
 .sec1-left h1{
+    position: relative;
     font-family: 'Lalezar', 'serif';
     font-size: 65px;
+    line-height: 1.2;
+    bottom: 4%;
 }
 
 .sec1-left h4{
     font-family: 'Abel', 'serif';
     font-size: 25px;
+    font-weight: 400;
 }
 
 .sec1-left button{
@@ -102,19 +106,33 @@ nav img{
     width: 210px;
     height: 63px;
     border-radius: 10px;
+    margin-top: 40px;
     font-size: 26px;
     font-family: 'Lalezar', 'serif';
 }
 
 .sec1-right{
     display: flex;
+    justify-content: center;
     position: relative;
     width: 50%;
     height: 100%;
-    background-color: yellow;
 }
 
-.sec1-right img{
-    width: 100px;
-    height: 100px;
+#brownie{
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 436px;
+    height: 420px;
+    top: 200px;
+    right: 17%;
+}
+
+#coffee{
+    position: relative;
+    width: 447.83px;
+    height: 349.09px;
+    left: 22%;
+    top: 9%;
 }
