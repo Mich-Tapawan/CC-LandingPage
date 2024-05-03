@@ -50,6 +50,7 @@ nav img{
     display: inline-block;
     padding: 0 10px;
     margin: 0 0 0 46px;
+    color: #3a2c2c;
     cursor: pointer;
 }
 
@@ -65,13 +66,7 @@ nav img{
 }
 .circle{
     position: relative;
-    background-color: #A0A289;
-    height: 1043px;
-    width: 989px;
-    border-radius: 50%;
-    clip-path: circle(50% at 100% 0);
-    left: 50%;
-    top: -10%;
+    width: 100%;
 }
 
 .sec1{
