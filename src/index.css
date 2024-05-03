@@ -13,22 +13,23 @@ nav{
     height: 100px;
     width: 100%;
     padding: 0 10%;
+    margin-top: 10px;
     align-items: center;
     z-index: 1000;
 }
 
 nav img{
-    width: 80px;
+    width: 90px;
     margin-right: 20px;
 }
 
 #nav-links li:first-child{
     display: flex;
     color: #493d3d;
-    font-size: 30px;
-    font-weight: lighter;
+    font-size: 35px;
+    font-weight:500;
     position: relative;
-    left: -24%;
+    left: -22%;
     width: 400px;
 }
 
@@ -45,6 +46,7 @@ nav img{
 }
 
 #nav-links li{
+    font-size: 17px;
     display: inline-block;
     padding: 0 10px;
     margin: 0 0 0 46px;
@@ -64,10 +66,12 @@ nav img{
 .circle{
     position: relative;
     background-color: #A0A289;
-    height: 100px;
-    width: 100px;
+    height: 1043px;
+    width: 989px;
     border-radius: 50%;
-    left: 100px;
+    clip-path: circle(50% at 100% 0);
+    left: 50%;
+    top: -10%;
 }
 
 .sec1{
@@ -76,7 +80,6 @@ nav img{
     width: 80%;
     height: 87%;
     top: 0px;
-    background-color: red;
     margin: 100px 0 0 10%;
 }
 
@@ -85,7 +88,6 @@ nav img{
     flex-direction: column;
     width: 50%;
     height: 100%;
-    background-color: blue;
     justify-content: center;
 }
 
