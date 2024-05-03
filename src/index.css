@@ -31,11 +31,7 @@ nav img{
     position: relative;
     left: -22%;
     width: 400px;
-}
-
-#nav-links li:first-child:hover{
-    color: #493d3d;
-    background-color: white;
+    bottom: 0px;
 }
 
 #nav-links{
@@ -54,10 +50,12 @@ nav img{
     cursor: pointer;
 }
 
-#nav-links li:hover{
+#nav-links li:hover:not(:first-child){
     background-color: #493d3d;
     color: white;
-    border-radius: 30%;
+    border-radius: 16px;
+    position: relative;
+    bottom: 1.5px;
 }
 
 .upper{
@@ -102,14 +100,22 @@ nav img{
 }
 
 .sec1-left button{
+    display: flex;
     background-color: #442F2F;
     color: white;
     width: 210px;
     height: 63px;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-top: 40px;
     font-size: 26px;
     font-family: 'Lalezar', 'serif';
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sec1-left button svg{
+    margin-left: 8px;
+    margin-bottom: 4px;
 }
 
 .sec1-right{
