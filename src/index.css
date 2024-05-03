@@ -61,18 +61,32 @@ nav img{
     min-height: 100vh;
     width: 100%;
 }
+.circle{
+    position: relative;
+    background-color: #A0A289;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 100px;
+}
 
 .sec1{
+    display: flex;
     position: absolute;
     width: 80%;
     height: 87%;
+    top: 0px;
     background-color: red;
     margin: 100px 0 0 10%;
 }
 
 .sec1-left{
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    height: 100%;
     background-color: blue;
+    justify-content: center;
 }
 
 .sec1-left h1{
@@ -93,4 +107,17 @@ nav img{
     border-radius: 10px;
     font-size: 26px;
     font-family: 'Lalezar', 'serif';
+}
+
+.sec1-right{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.sec1-right img{
+    width: 100px;
+    height: 100px;
 }
