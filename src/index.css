@@ -125,6 +125,7 @@ nav img{
 
 .sec1-left button:hover{
     position: relative;
+    background-color: #634c4c;
     top: 1px;
 }
 
