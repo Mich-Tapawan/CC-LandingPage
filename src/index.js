@@ -11,5 +11,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
             navbar.style.backgroundColor = 'transparent';
             navbar.style.paddingTop = '10px';
         }
+    });
+
+    //Navbar main logo and home links top scrolling
+    var logo = document.querySelectorAll('.top');
+
+    logo.forEach(link =>{
+        link.addEventListener('click',()=>{
+            window.scrollTo(0,0);
+        })
     })
 });
