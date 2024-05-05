@@ -14,7 +14,7 @@ nav{
     height: 100px;
     width: 100%;
     padding: 0 10rem;
-    margin-top: 10px;
+    padding-top: 10px;
     align-items: center;
     transition: ease-in-out 0.1s; 
     z-index: 1000;
@@ -56,11 +56,21 @@ nav img{
 }
 
 #nav-links li:hover:not(:first-child){
+    transition: 0.2s;
     background-color: #493d3d;
     color: white;
     border-radius: 16px;
     position: relative;
     top: 1.5px;
+}
+
+#nav-links a:visited{
+    color: #3a2c2c;
+}
+
+#nav-links a:hover{
+    transition: 0.1s;
+    color: white;
 }
 
 .upper{
@@ -284,4 +294,5 @@ nav img{
     color: #F28824;
     border-style: none;
     border-radius: 10px;
+    cursor: pointer;
 }
