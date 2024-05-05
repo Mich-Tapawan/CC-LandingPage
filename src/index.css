@@ -16,6 +16,7 @@ nav{
     padding: 0 10rem;
     margin-top: 10px;
     align-items: center;
+    transition: ease-in-out 0.1s; 
     z-index: 1000;
 }
 
