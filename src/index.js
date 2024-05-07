@@ -25,9 +25,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 
     // Review Section - card toggling
-    const reviews =[[{name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}],
-                    [{name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}],
-                    [{name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}]]
+    const reviews =[[{name:'Abel Lazaro', position:'LA Food Critic', main:'Exceptional food and service!', statement:''},
+                     {name:'James Garcia', position:'Michelin Star Chef', main:'Right amount of sweetness.', statement:''},
+                     {name:'David Jonas', position:'GMA Media Star', main:'Excellent and worth it!', statement:''}],
+                    [{name:'', position:'', main:'', statement:''},
+                     {name:'', position:'', main:'', statement:''},
+                     {name:'', position:'', main:'', statement:''}],
+                    [{name:'', position:'', main:'', statement:''}, 
+                     {name:'', position:'', main:'', statement:''},
+                     {name:'', position:'', main:'', statement:''}]]
 
     const toggleBtn = document.getElementsByClassName('card-btns');
 
