@@ -222,18 +222,22 @@ nav img{
 }
 
 .foods{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    bottom: 200px;
+    padding: 0 10rem;
+}
+
+.food-img{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: row;
-    width: 100%;
-    height: 60px;
-    right: 4%;
-    padding: 0 10rem;
 }
 
 #matcha{
     position: relative;
-    left: 0rem;
     width: 20rem;
     height: 29rem;
     bottom: 24px;
@@ -243,13 +247,13 @@ nav img{
 #pie{
     position: relative;
     right: 1rem;
-    min-width: 20rem;
+    width: 20rem;
     height: 20rem;
     margin-right: 8rem;
 }
 
 #donut{
-    min-width: 21rem;
+    width: 21rem;
     height: 18rem;
     margin-right: 10rem;
 }
@@ -309,8 +313,51 @@ nav img{
 }
 
 .cards{
-    width: 330px;
+    width: 24%;
     height: 400px;
     background-color: #fff;
     border-radius: 15px;
+    padding: 2rem;
+}
+
+.card-btns{
+    cursor: pointer;
+}
+
+.card-upper{
+    display: flex;
+    flex-direction: row;
+    height: 18%;
+}
+
+.card-prof{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.card-upper h4{
+    font-family: 'abeezee','serif'; 
+    font-weight: lighter;
+}
+
+.card-position{
+    color: rgb(151, 150, 150);
+}
+
+.dp{
+    background-color: rgb(145, 145, 145);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card-desc{
+    height: 82%;
+}
+
+.ratings{
+    margin-top: 10px;
+    width: 55%;
 }
