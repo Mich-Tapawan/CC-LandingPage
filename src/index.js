@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
-    // Navigation Bar Scrolling Effect
+    // Navbar - Scrolling Effect
     var navbar = document.getElementById('fixed-nav');
 
     window.addEventListener('scroll', ()=>{
@@ -15,12 +15,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     });
 
-    //Navbar main logo and home links top scrolling
+    // Navbar - main logo and home links top scrolling
     var logo = document.querySelectorAll('.top');
 
     logo.forEach(link =>{
         link.addEventListener('click',()=>{
             window.scrollTo(0,0);
+        });
+    });
+
+    // Review Section - card toggling
+    const reviews =[[{name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}],
+                    [{name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}],
+                    [{name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}, {name:'', position:'', main:'', statement:''}]]
+
+    const toggleBtn = document.getElementsByClassName('card-btns');
+
+    toggleBtn.forEach(button =>{
+        button.addEventListener('click', ()=>{
+            if(button.id == 'left-btn'){
+                pass
+            }
+            else if (button.id == 'right-btn'){
+                pass
+            }
         })
     })
 });
