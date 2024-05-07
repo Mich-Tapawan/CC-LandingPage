@@ -357,6 +357,13 @@ nav img{
     height: 82%;
 }
 
+.card-desc h6{
+    font-family: 'Abeezee', 'serif';
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
 .ratings{
     margin-top: 10px;
     width: 55%;
