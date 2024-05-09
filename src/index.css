@@ -265,7 +265,7 @@ nav img{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     padding: 0 5rem;
     background-image: linear-gradient(#E89945, #F3841E);
     top: 200px;
@@ -394,7 +394,7 @@ nav img{
 
 .sec4-left img{
     position: relative;
-    top: 100px;
+    top: 110px;
     width: 30rem;
     height: 32rem;
     object-fit:cover;
