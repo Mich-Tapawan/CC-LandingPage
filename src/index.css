@@ -177,10 +177,9 @@ nav img{
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 600px;
+    min-height: 800px;
     padding: 0 10rem;
-    border-color: red;
-    bottom: 40px;
+    bottom: 80px;
 }
 
 .sec2 h2{
@@ -223,17 +222,21 @@ nav img{
 
 .foods{
     position: relative;
-    width: 100%;
-    height: 20px;
-    bottom: 200px;
-    padding: 0 10rem;
-}
-
-.food-img{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    width: 100%;
+    height: 300px;
+    top: 30px;
+}
+
+.food-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    max-height: 100%;
 }
 
 #matcha{
@@ -241,21 +244,19 @@ nav img{
     width: 20rem;
     height: 29rem;
     bottom: 24px;
-    margin-right: 10rem;
 }
 
 #pie{
     position: relative;
-    right: 1rem;
     width: 20rem;
     height: 20rem;
-    margin-right: 8rem;
+    left: 1rem;
+
 }
 
 #donut{
     width: 21rem;
     height: 18rem;
-    margin-right: 10rem;
 }
 
 .sec3{
@@ -268,7 +269,6 @@ nav img{
     height: 92vh;
     padding: 0 5rem;
     background-image: linear-gradient(#E89945, #F3841E);
-    top: 200px;
 }
 
 .review-text{
@@ -380,8 +380,10 @@ nav img{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 115vh;
+    height: 90vh;
     padding: 0 10rem;
+    position: relative;
+    top: 200px;
 }
 
 .sec4-left{
