@@ -380,10 +380,9 @@ nav img{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 90vh;
+    height: 735px;
     padding: 0 10rem;
     position: relative;
-    top: 200px;
 }
 
 .sec4-left{
@@ -396,7 +395,6 @@ nav img{
 
 .sec4-left img{
     position: relative;
-    top: 110px;
     width: 30rem;
     height: 32rem;
     object-fit:cover;
@@ -404,6 +402,24 @@ nav img{
 }
 
 .sec4-right{
+    display: flex;
     width: 50%;
     height: 100%;
+    align-items:baseline;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.sec4-right h1{
+    font-size: 30px;
+    color: #442F2F;
+    
+}
+
+.sec4-right p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Abel', 'serif';
+    width: 100%;
 }
