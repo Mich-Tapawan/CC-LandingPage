@@ -429,12 +429,14 @@ nav img{
 .sec5{
     width: 100%;
     height: 735px;
-    background-color: red;
+    position: relative;
 }
 
 .bg-container{
     width: 100%;
     height: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .bg-container img{
@@ -442,4 +444,28 @@ nav img{
     height: 130%;
     filter: brightness(0.5);
     object-fit: cover;
+}
+
+.contact-bg-text{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5;
+    top: 100px;
+}
+
+.bg-container h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'lalezar', 'serif';
+}
+
+.bg-container p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Abel', 'serif';
 }
