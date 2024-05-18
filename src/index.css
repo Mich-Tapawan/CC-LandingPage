@@ -430,6 +430,9 @@ nav img{
     width: 100%;
     height: 735px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bg-container{
@@ -468,4 +471,23 @@ nav img{
     color: white;
     font-size: 20px;
     font-family: 'Abel', 'serif';
+}
+
+.contact-box{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 400px;
+    z-index: 100;
+}
+
+.contact-left{
+    width: 50%;
+}
+
+.contact-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
