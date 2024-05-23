@@ -503,6 +503,27 @@ nav img{
     margin-bottom: 2rem ;
 }
 
+.circle-logo{
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #E89945;
+    width: 60px;
+    height: 60px;
+}
+
+.contact-left h4{
+    font-family: 'Lalezar', 'serif';
+    font-size: 24px;
+}
+
+.contact-left h6{
+    font-family: 'Abel', 'Serif';
+    font-size: 27px;
+    font-weight: lighter;
+}
+
 .contact-right{
     width: 50%;
     display: flex;
