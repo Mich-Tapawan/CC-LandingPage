@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             navbar.style.backgroundColor = 'transparent';
             navbar.style.paddingTop = '10px';
             navbar.style.boxShadow = '0px 1px 2px 1px transparent';
-            navbar.style.paddingBottom = '0px'
+            navbar.style.paddingBottom = '0px';
             navLogo.style.paddingBottom = '0px';
         }
     });
