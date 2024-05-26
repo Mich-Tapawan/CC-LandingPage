@@ -608,4 +608,18 @@ footer{
     height: 35.9vh;
     background-color: #F28824;
     top: 20vh;
+    padding: 4rem 10rem;
+}
+
+.soc-logos{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soc-logo{
+    width: 4vw;
+    height: auto;
 }
