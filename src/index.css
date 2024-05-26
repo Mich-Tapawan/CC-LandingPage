@@ -603,7 +603,9 @@ nav img{
 }
 
 footer{
+    position: relative;
     width: 100%;
     height: 35.9vh;
     background-color: #F28824;
+    top: 20vh;
 }
