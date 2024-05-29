@@ -34,15 +34,15 @@ nav img{
     margin-right: 20px;
 }
 
-#nav-links li:first-child{
+#nav-logo{
     display: flex;
     color: #493d3d;
     font-size: 35px;
     font-weight:500;
-    position: absolute;
-    left: 6rem;
-    width: 400px;
+    left: 10rem;
+    width: 500px;
     bottom: 0px;
+    border: 1px solid green
 }
 
 #nav-links{
@@ -55,7 +55,7 @@ nav img{
 #nav-links li{
     font-size: 17px;
     display: inline-block;
-    padding: 0 10px;
+    gap: 1rem;
     margin: 0 0 0 46px;
     color: #3a2c2c;
     cursor: pointer;
@@ -701,7 +701,7 @@ footer{
         margin-left: 0;
     }
 
-    #nav-links li:first-child{
+    #nav-logo{
         left: 1rem;
         font-size: 30px;
     }
@@ -717,6 +717,12 @@ footer{
 
     .sec1-left h4 {
         font-size: 20px;
+    }
+
+    .sec1-left button {
+        width: 170px;
+        height: 55px;
+        font-size: 18px;
     }
 
     #brownie {
