@@ -14,6 +14,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+section{
+    width: 100%;
+}
+
 nav{
     position: fixed;
     display: flex;
@@ -40,9 +44,11 @@ nav img{
     font-size: 35px;
     font-weight:500;
     left: 10rem;
-    width: 500px;
-    bottom: 0px;
-    border: 1px solid green
+    width: 500px;   
+}
+
+#nav-logo img{
+    justify-self: center;
 }
 
 #nav-links{
@@ -61,7 +67,7 @@ nav img{
     cursor: pointer;
 }
 
-#nav-links li:hover:not(:first-child){
+#nav-links li:hover{
     transition: 0.2s;
     background-color: #493d3d;
     color: white;
@@ -79,34 +85,34 @@ nav img{
     color: white;
 }
 
-.upper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-}
 .circle{
+    display: none;
     position: relative;
     width: 100%;
 }
 
 .sec1{
     display: flex;
-    position: absolute;
-    width: 100%;
-    right: 0%;
-    min-height: 87%;
-    top: 0px;
-    padding: 0 10rem;
-    margin: 100px 0 0 10%;
-    border: 1px solid green;
+    min-width: 100%;
+    min-height: 87vh;
+    margin-top: 100px;
+    background-image: url("src/images/circle.png");
 }
 
+.sec1-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 0 10rem;
+    border: 1px solid black;
+}
+
+
+/*
 .sec1-left{
     display: flex;
-    flex-direction: column;
     width: 50%;
-    max-height: 100%;
+    height: auto;
+    flex-direction: column;
     justify-content: center;
     border: 1px solid blue;
 }
@@ -153,38 +159,36 @@ nav img{
 
 .sec1-right{
     display: flex;
+    width: 50%;
     justify-content: center;
     position: relative;
-    width: 50%;
-    max-height: 100%;
     border: 1px solid red;
 }
 
 #brownie{
+    display: none;
     position: relative;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     max-width: 436px;
     max-height: 420px;
-    top: 200px;
-    right: 40%;
+    border: 1px solid blue;
 }
 
 #coffee{
+    display: none;
     position: relative;
     max-width: 447.83px;
     max-height: 349.09px;
-    left: 60%;
-    top: 9%;
+    border: 1px solid red;
 }
 
 .sec2{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     min-height: 800px;
     padding: 0 10rem;
     bottom: 80px;
@@ -235,9 +239,15 @@ nav img{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     height: 300px;
     top: 30px;
+    border: 1px solid orange;
+}
+
+.foods > * {
+    max-width: 100%;
+    flex: 1;
 }
 
 .food-container{
@@ -450,11 +460,12 @@ nav img{
 .bg-container{
     width: 100%;
     height: 42%;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
 .bg-container img{
+    display: none;
     width: 100%;
     height: 130%;
     flex: 1;
@@ -674,110 +685,4 @@ footer{
     width: 80px;
     height: auto;
 }
-
-@media (min-width: 1200px) {
-    #brownie {
-        max-width: 436px;
-        max-height: 420px;
-        top: 200px;
-        right: 40%;
-    }
-
-    #coffee {
-        max-width: 447.83px;
-        max-height: 349.09px;
-        left: 60%;
-        top: 9%;
-    }
-}
-
-@media (max-width: 1199px) {
-
-    nav{
-        padding: 0 5rem;
-    }
-
-    nav img{
-        margin-left: 0;
-    }
-
-    #nav-logo{
-        left: 1rem;
-        font-size: 30px;
-    }
-
-    .sec1{
-        min-height: 76%;
-        padding: 0 5rem;
-    }
-
-    .sec1-left h1 {
-        font-size: 3.5em;
-    }
-
-    .sec1-left h4 {
-        font-size: 20px;
-    }
-
-    .sec1-left button {
-        width: 170px;
-        height: 55px;
-        font-size: 18px;
-    }
-
-    #brownie {
-        max-width: 400px;
-        max-height: 390px;
-        top: 150px;
-        right: 30%;
-    }
-
-    #coffee {
-        max-width: 370px;
-        max-height: 320px;
-        left: 50%;
-        top: 7%;
-    }
-}
-
-@media (max-width: 768px) {
-    .sec1 {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .sec1-left, .sec1-right {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-
-    #brownie, #coffee {
-        max-width: 200px;
-        max-height: 200px;
-        margin: 20px 0;
-        position: static;
-    }
-}
-
-@media (max-width: 480px) {
-    #brownie, #coffee {
-        max-width: 150px;
-        max-height: 150px;
-    }
-
-    .sec1-left h1 {
-        font-size: 2em;
-    }
-
-    .sec1-left h4 {
-        font-size: 18px;
-    }
-
-    .sec1-left button {
-        width: 150px;
-        height: 50px;
-        font-size: 18px;
-    }
-}
+*/
