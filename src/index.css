@@ -219,7 +219,11 @@ nav img{
 @media (max-width: 1095px){
 
     .sec1{
-
+        max-height: 140vh;
+        background-image: url('images/circle-drip.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 150%;
     }
 
     .even-columns{
@@ -235,8 +239,23 @@ nav img{
         justify-content: center;
     }
 
+    .even-columns div:nth-child(1) h1, p{
+        width: 100%;
+    }
+
+    .even-columns div:nth-child(2){
+        left: 20px;
+        bottom: 20vh;
+    }
+
     .even-columns div:nth-child(2) img{
-        width: 60%;
+        width: 55%;
+        min-width: 50%;
+    }
+
+    #brownie{
+        left: 7%;
+        top:15%;
     }
 }
 
@@ -244,13 +263,45 @@ nav img{
     .even-columns h1{
         background-color: blue;
     }
+
+    .sec1{
+        max-height: 150vh;
+        background-position: 0 80%;
+
+    }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
+    
+    .sec1{
+        max-height: 130vh;
+        background-position: 0 90%;
+
+    }
+
+    .container{
+        margin-inline: 2rem;
+    }
+
     .even-columns h1{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
         background-color: yellow;
+    }
+
+    
+    .even-columns div:nth-child(2){
+        right: 10px;
+        bottom: 12vh;
+    }
+
+    .even-columns div:nth-child(2) img{
+        width: 65%;
+    }
+
+    #brownie{
+        left: 0%;
+        top:15%;
     }
 }
 
