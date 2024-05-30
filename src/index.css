@@ -89,19 +89,13 @@ nav img{
     color: white;
 }
 
-.circle{
-    display: none;
-    position: relative;
-    width: 100%;
-}
-
 .sec1{
     display: flex;
     min-width: 100%;
-    min-height: 110vh;
+    min-height: 106vh;
     background-image: url("images/circle.png");
-    background-position: 50% 40%;
-    border: 1px solid green;
+    background-size: 1600px;
+    background-position: 53% 0%;
 }
 
 .container{
@@ -118,8 +112,11 @@ nav img{
     gap: 1rem;
     grid-template-columns: auto 600px;
     grid-template-rows: 600px;
-    padding-top: 40px;
-    border: 1px solid red;
+    padding-top: 20px;
+}
+
+.even-columns div:nth-child(1){
+    align-content: center;
 }
 
 .even-columns div:nth-child(1) h1{
@@ -127,24 +124,50 @@ nav img{
     font-size: 4em;
     font-weight: 500;
     line-height: 1;
+    margin-bottom: 4vh;
     bottom: 4%;
 }
 
-.even-columns div:nth-child(1) h4{
+.even-columns div:nth-child(1) p{
     font-family: 'Abel', 'serif';
     font-size: 25px;
     font-weight: 400;
+}
+
+.even-columns div:nth-child(1) button{
+    display: flex;
+    background-color: #442F2F;
+    color: white;
+    width: 210px;
+    height: 63px;
+    border-radius: 30px;
+    margin-top: 40px;
+    font-size: 26px;
+    font-family: 'Lalezar', 'serif';
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.even-columns div:nth-child(1) button svg{
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.even-columns div:nth-child(1) button:hover{
+    position: relative;
+    background-color: #634c4c;
+    top: 1px;
 }
 
 .even-columns div:nth-child(2){
     display: flex;
     justify-content: center;
     position: relative;
-    border: 1px solid green;
 }
 
 .even-columns div:nth-child(2) img{
-    width: 80%;
+    width: 75%;
     height: auto;
 }
 
@@ -152,20 +175,56 @@ nav img{
     position: absolute;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    left: 14%;
+    top: 30%;
     max-height: auto;
-    border: 1px solid blue;
 }
 
 #coffee{
     position: absolute;
     max-height: auto;
-    border: 1px solid pink;
+    left: 38%;
+    top: 10%;
 }
 
-@media (min-width: 50em){
-    .even-columns{
+@media (max-width: 1354px){
+    .even-columns div:nth-child(1) h1{
+        font-size: 3.5em;
+    }
+
+    .even-columns div:nth-child(1) p{
+        font-size: 20px;
+    }
+
+    nav{
+        padding: 0 5rem;
+    }
+
+    .container{
+        margin-inline: 5rem;
+    }
+
+    .even-columns div:nth-child(2) img{
+        width: 70%;
+    }
+
+    #coffee{
+        left: 34%;
+    }
+
+}
+
+@media (max-width: 800px){
+    .even-columns h1{
+        background-color: blue;
+    }
+}
+
+@media (max-width: 500px){
+    .even-columns h1{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+        background-color: yellow;
     }
 }
 
