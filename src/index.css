@@ -23,7 +23,7 @@ section{
     width: 100%;
 }
 
-nav{
+header{
     position: fixed;
     display: flex;
     height: 100px;
@@ -35,7 +35,16 @@ nav{
     z-index: 1000;
 }
 
-nav img{
+#nav-logo{
+    display: flex;
+    color: #493d3d;
+    font-size: 35px;
+    font-weight:500;
+    width: 500px;
+    justify-self:baseline;
+}
+
+#nav-logo img{
     position: relative;
     width: 70px;
     height: 70px;
@@ -43,22 +52,17 @@ nav img{
     margin-right: 20px;
 }
 
-#nav-logo{
-    display: flex;
-    color: #493d3d;
-    font-size: 35px;
-    font-weight:500;
-    width: 500px;
-}
-
 #nav-logo img{
     justify-self: center;
+}
+
+nav{
+    width: 80%;
 }
 
 #nav-links{
     display: flex;
     justify-content: flex-end;
-    width: 100%;
     align-items: center;
 }
 
@@ -204,7 +208,7 @@ nav img{
         font-size: 20px;
     }
 
-    nav{
+    header{
         padding: 0 5rem;
     }
 
@@ -219,6 +223,16 @@ nav img{
 }
 
 @media (max-width: 1095px){
+
+    #hamburger{
+        display: block;
+    }
+
+    #nav-links{
+        position: absolute;
+        inset: 0 0 0 30%;
+        height: 100%;
+    }
 
     .sec1{
         max-height: 140vh;
