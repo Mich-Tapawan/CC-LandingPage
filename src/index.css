@@ -178,6 +178,7 @@ nav img{
     left: 14%;
     top: 30%;
     max-height: auto;
+    transition: all 0.3s ease;
 }
 
 #coffee{
@@ -185,6 +186,7 @@ nav img{
     max-height: auto;
     left: 38%;
     top: 10%;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 1354px){
@@ -223,12 +225,13 @@ nav img{
         background-image: url('images/circle-drip.png');
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: 0 150%;
+        background-position: 0 120%;
     }
 
     .even-columns{
         grid-template-columns: 1fr;
         grid-template-rows: 600px 600px;
+        gap: calc(5% + 20px);
     }
 
     .even-columns div:nth-child(1){
@@ -265,22 +268,33 @@ nav img{
     }
 
     .sec1{
-        max-height: 150vh;
-        background-position: 0 80%;
+        max-height: 130vh;
+        background-position: 0 110%;
 
+    }
+
+    .even-columns div:nth-child(2) img{
+        width: 60%;
+        min-width: 50%;
+    }
+
+    #brownie{
+        left: 0%;
+        top:15%;
     }
 }
 
 @media (max-width: 600px){
     
     .sec1{
-        max-height: 130vh;
+        max-height: 120vh;
         background-position: 0 90%;
 
     }
 
     .container{
         margin-inline: 2rem;
+        margin-top: 50px;
     }
 
     .even-columns h1{
@@ -301,7 +315,12 @@ nav img{
 
     #brownie{
         left: 0%;
-        top:15%;
+        top:0%;
+    }
+
+    #coffee{
+        top: -2%;
+        left: 28%;
     }
 }
 
