@@ -60,6 +60,10 @@ nav{
     width: 80%;
 }
 
+#burger{
+    display: block;
+}
+
 #nav-links{
     display: flex;
     justify-content: flex-end;
@@ -224,14 +228,34 @@ nav{
 
 @media (max-width: 1095px){
 
-    #hamburger{
+    #burger{
         display: block;
+        position: relative;
+        left: 80%;
+        cursor: pointer;
+    }
+
+    header{
+        padding-right: 0rem;
+    }
+
+    nav{
     }
 
     #nav-links{
-        position: absolute;
-        inset: 0 0 0 30%;
-        height: 100%;
+        display: none;
+        flex-direction: column;
+        height: 1600px;
+        justify-content:center;
+        background: #EA963F;
+    }
+    
+    #nav-links li{
+        font-size: 17px;
+        gap: 1rem;
+        margin: 0 0 0 46px;
+        color: #fff;
+        cursor: pointer;
     }
 
     .sec1{
