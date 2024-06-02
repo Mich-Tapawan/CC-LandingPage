@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
     // Navbar - Scrolling Effect
-    var navbar = document.getElementById('fixed-nav');
+    var header = document.querySelector('header');
     var navLogo = document.querySelector('#nav-logo');
 
     window.addEventListener('scroll', ()=>{
         if(window.scrollY > 0){
-            navbar.style.backgroundColor = '#fff';
-            navbar.style.boxShadow = '0px 0.5px 8px 1px #858585';
-            navbar.style.paddingBottom = '10px';
+            header.style.backgroundColor = '#fff';
+            header.style.boxShadow = '0px 0.5px 8px 1px #858585';
+            header.style.paddingBottom = '10px';
             navLogo.style.paddingBottom = '5px';
         }
         else{
-            navbar.style.backgroundColor = 'transparent';
-            navbar.style.paddingTop = '10px';
-            navbar.style.boxShadow = '0px 1px 2px 1px transparent';
-            navbar.style.paddingBottom = '0px';
+            header.style.backgroundColor = 'transparent';
+            header.style.paddingTop = '10px';
+            header.style.boxShadow = '0px 1px 2px 1px transparent';
+            header.style.paddingBottom = '0px';
             navLogo.style.paddingBottom = '0px';
         }
     });
