@@ -61,7 +61,7 @@ nav{
 }
 
 #burger{
-    display: block;
+    display: none;
 }
 
 #nav-links{
