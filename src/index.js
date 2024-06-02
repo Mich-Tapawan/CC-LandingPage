@@ -29,6 +29,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
         });
     });
 
+    // Navbar - Burger icon display switching for mobile
+    var burger = document.querySelector('#burger');
+    var navLinks = document.querySelector('#nav-links');
+    var navShown = false
+
+    burger.addEventListener('click', ()=>{
+        if (navShown === false){
+            navLinks.style.display = 'flex';
+            navShown = true;
+        }
+        else{
+            navLinks.style.display = 'none';
+            navShown = false;
+        }
+    })
+
     // Review Section - card toggling
     const reviews =[[{name:'Abel Lazaro', position:'LA Food Critic', main:'Exceptional food and service!', statement:''},
                      {name:'James Garcia', position:'Michelin Star Chef', main:'Right amount of sweetness.', statement:''},
