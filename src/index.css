@@ -74,6 +74,7 @@ nav{
     font-size: 17px;
     display: inline-block;
     gap: 1rem;
+    padding-inline: 10px;
     margin: 0 0 0 46px;
     color: #3a2c2c;
     cursor: pointer;
