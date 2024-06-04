@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+    var screenWidth = window.innerWidth;
 
     // Navbar - Scrolling Effect
     var header = document.querySelector('header');
@@ -31,10 +32,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     // Navbar - Burger icon display switching for mobile
     var burger = document.querySelector('#burger');
-    var navbar = document.querySelector('#navbar');
     var navLinks = document.querySelector('#nav-links');
     var navShown = false
-
+    
     burger.addEventListener('click', ()=>{
         if (navShown === false){
             navLinks.style.display = 'flex';
