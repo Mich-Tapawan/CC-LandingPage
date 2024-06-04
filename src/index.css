@@ -253,16 +253,15 @@ nav{
         align-items: baseline;
         color: #3a2c2c;
         background-color: #EA963F;
-        padding-bottom: 55vh;
+        padding-bottom: 50vh;
     }
     
     #nav-links a{
         font-size: 17px;
-        display: inline-block;
+        flex-basis: 100px;
+        width: 110px;
         padding-block: 20px;
-        padding-left: 10px;
-        padding-right: 346px;
-        margin: 0 0 0 46px;
+        margin-inline: 2rem;
         color: #fff;
         cursor: pointer;
         border: 1px solid red;
