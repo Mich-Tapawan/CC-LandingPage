@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     // Navbar - Burger icon display switching for mobile
     var burger = document.querySelector('#burger');
+    var navbar = document.querySelector('#navbar');
     var navLinks = document.querySelector('#nav-links');
     var navShown = false
 
