@@ -56,6 +56,10 @@ header{
     justify-self: center;
 }
 
+.top{
+    cursor: pointer;
+}
+
 nav{
     width: 80%;
 }
@@ -70,17 +74,16 @@ nav{
     align-items: center;
 }
 
-#nav-links li{
+#nav-links a{
     font-size: 17px;
     display: inline-block;
-    gap: 1rem;
     padding-inline: 10px;
     margin: 0 0 0 46px;
     color: #3a2c2c;
     cursor: pointer;
 }
 
-#nav-links li:hover{
+#nav-links a:hover{
     transition: 0.2s;
     background-color: #493d3d;
     color: white;
@@ -217,6 +220,10 @@ nav{
         padding: 0 5rem;
     }
 
+    #nav-links a{
+        margin-left: 40px;
+    }
+
     .container{
         margin-inline: 5rem;
     }
@@ -229,31 +236,33 @@ nav{
 
 @media (max-width: 1095px){
 
+    header{
+        padding-right: 0rem;
+    }
+
+    #navbar{
+        display: flex;
+        width: 50%;
+    }
+
     #burger{
-        display: block;
+        display:block;
         position: relative;
         left: 80%;
         cursor: pointer;
     }
 
-    header{
-        padding-right: 0rem;
-    }
-
-    nav{
-    }
-
     #nav-links{
         display: none;
         flex-direction: column;
-        height: 1600px;
         justify-content:center;
-        background: #EA963F;
+        background-color: #EA963F;
     }
     
-    #nav-links li{
+    #nav-links a{
         font-size: 17px;
-        gap: 1rem;
+        display: inline-block;
+        padding-inline: 10px;
         margin: 0 0 0 46px;
         color: #fff;
         cursor: pointer;
