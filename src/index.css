@@ -96,11 +96,6 @@ nav{
     color: #3a2c2c;
 }
 
-#nav-links a:hover{
-    transition: 0.1s;
-    color: white;
-}
-
 .sec1{
     display: flex;
     min-width: 100%;
@@ -240,11 +235,6 @@ nav{
         padding-right: 0rem;
     }
 
-    #navbar{
-        display: flex;
-        width: 50%;
-    }
-
     #burger{
         display:block;
         position: relative;
@@ -254,18 +244,42 @@ nav{
 
     #nav-links{
         display: none;
+        position: absolute;
+        height: 100vh;
+        left: 50%;
+        top: 100%;
+        width: 50%;
         flex-direction: column;
-        justify-content:center;
+        align-items: baseline;
+        color: #3a2c2c;
         background-color: #EA963F;
+        padding-bottom: 55vh;
     }
     
     #nav-links a{
         font-size: 17px;
         display: inline-block;
-        padding-inline: 10px;
+        padding-block: 20px;
+        padding-left: 10px;
+        padding-right: 346px;
         margin: 0 0 0 46px;
         color: #fff;
         cursor: pointer;
+        border: 1px solid red;
+        
+    }
+
+    #nav-links a:visited{
+        color: #fff;
+    }
+    
+    #nav-links a:hover{
+        transition: 0.2s;
+        background-color: #fbb263;
+        color: white;
+        border-radius: 16px;
+        position: relative;
+        top: 1.5px;
     }
 
     .sec1{
