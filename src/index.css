@@ -86,7 +86,7 @@ nav{
 #nav-links a:hover{
     transition: 0.2s;
     background-color: #493d3d;
-    color: white;
+    color: #fff;
     border-radius: 16px;
     position: relative;
     top: 1.5px;
@@ -94,6 +94,10 @@ nav{
 
 #nav-links a:visited{
     color: #3a2c2c;
+}
+
+#nav-links a:visited:hover{
+    color: #fff;
 }
 
 .sec1{
