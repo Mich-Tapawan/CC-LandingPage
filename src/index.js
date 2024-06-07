@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    var screenWidth = window.innerWidth;
 
     // Navbar - Scrolling Effect
     var header = document.querySelector('header');
@@ -31,20 +30,34 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 
     // Navbar - Burger icon display switching for mobile
-    var burger = document.querySelector('#burger');
-    var navLinks = document.querySelector('#nav-links');
-    var navShown = false
-    
-    burger.addEventListener('click', ()=>{
-        if (navShown === false){
-            navLinks.style.display = 'flex';
-            navShown = true;
-        }
-        else{
-            navLinks.style.display = 'none';
-            navShown = false;
-        }
-    })
+        var burger = document.querySelector('#burger');
+        var navLinks = document.querySelector('#nav-links');
+        var navShown = false
+
+        burger.addEventListener('click', ()=>{
+            if (navShown === false){
+                navLinks.style.display = 'flex';
+                navShown = true;
+            }
+            else{
+                navLinks.style.display = 'none';
+                navShown = false;
+            }
+        })
+
+        // Appropriate displaying and hiding of navbar during screen width resizing
+        window.addEventListener('resize', ()=>{
+            var screenWidth = window.innerWidth;
+
+            if (screenWidth > 1095){
+                navLinks.style.display = 'flex';
+                navShown = false;
+            }
+            else{
+                navLinks.style.display = 'none';
+                navShown = false;
+            }
+        })
 
     // Review Section - card toggling
     const reviews =[[{name:'Abel Lazaro', position:'LA Food Critic', main:'Exceptional food and service!', statement:''},
