@@ -255,11 +255,14 @@ nav{
         background-color: #EA963F;
         padding-bottom: 50vh;
     }
+
+    #nav-links li{
+        width: 90%;
+    }
     
     #nav-links a{
         font-size: 17px;
-        flex-basis: 100px;
-        width: 400px;
+        width: 100%;
         padding-block: 20px;
         margin: 0;
         text-align: center;
