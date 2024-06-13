@@ -204,17 +204,19 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
     min-height: 800px;
     bottom: 80px;
-    border: 1px solid red;
 }
 
 .sec2-texts{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid blue;
 }
 
 .sec2 h2{
@@ -261,7 +263,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    max-width: 100%;
+    width: 100%;
     height: 300px;
     top: 30px;
     border: 1px solid orange;
@@ -329,6 +331,73 @@ nav{
 
     #coffee{
         left: 34%;
+    }
+
+    .sec2 h2{
+        font-family: 'Lalezar', 'serif';
+        font-size: 46px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    
+    .sec2 h5{
+        font-family: 'Abel', 'serif';
+        font-weight: lighter;
+        text-align: center;
+        font-size: 20px;
+        width: 40rem;
+        line-height: 1.4;
+        margin-top: 15px;
+    }
+
+    .sec2 button{
+        width: 200px;
+        height: 60px;
+    }
+
+    .foods{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        height: 300px;
+        top: 30px;
+        border: 1px solid orange;
+    }
+    
+    .foods > * {
+        max-width: 100%;
+        flex: 1;
+    }
+    
+    .food-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 60%;
+        max-height: 100%;
+    }
+    
+    #matcha{
+        position: relative;
+        width: 16rem;
+        height: 25rem;
+        bottom: 24px;
+    }
+    
+    #pie{
+        position: relative;
+        width: 17rem;
+        height: 17rem;
+        left: 1rem;
+    
+    }
+    
+    #donut{
+        width: 18rem;
+        height: 15rem;
     }
 
 }
