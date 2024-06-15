@@ -611,6 +611,11 @@ nav{
         top: -2%;
         left: 28%;
     }
+
+    #pie{
+        bottom: 30px;
+        padding-right: 20px;
+    }
 }
 
 /*
