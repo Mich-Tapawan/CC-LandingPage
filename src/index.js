@@ -57,26 +57,25 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 navLinks.style.display = 'none';
                 navShown = false;
             }
-
-            // Food Item - Food image swapping
-            if(screenWidth <= 600){
-                let imageSrc = ['src/images/matcha.png', 'src/images/pie.png', 'src/images/donut.png'];
-                let imageHolder = document.getElementById('pie');
-                let counter = 2;
-                
-                let intervalID = setInterval(()=>{
-                    imageHolder.src = imageSrc[counter];
-                    if (counter == (imageSrc.length - 1)){
-                        counter = 0;
-                    }
-                    else{
-                        counter++
-                    }
-                }, 3000);
-            }
-            else{
-                imageHolder.src = imageSrc[1];
-                counter = 2;
-            }
         });
+        // Food Item - Food image swapping
+        if(screenWidth <= 400){
+            let imageSrc = ['src/images/matcha.png', 'src/images/pie.png', 'src/images/donut.png'];
+            let imageHolder = document.getElementById('pie');
+            let counter = 2;
+                
+            let intervalID = setInterval(()=>{
+                imageHolder.src = imageSrc[counter];
+                if (counter == (imageSrc.length - 1)){
+                    counter = 0;
+                }
+                else{
+                    counter++
+                }
+            }, 3000);
+            }
+        else{
+            imageHolder.src = imageSrc[1];
+            counter = 2;
+        }
 });
