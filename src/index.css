@@ -521,7 +521,7 @@ nav{
     }
 
     .even-columns h1{
-        background-color: blue;
+        border: 1px solid blue;
     }
 
     .sec1{
@@ -553,6 +553,10 @@ nav{
     .sec2-texts h5{
         width:auto;
     }
+
+    .foods{
+        bottom: 30px;
+    }
     
     .foods > * {
         max-width: 100%;
@@ -560,6 +564,7 @@ nav{
     }
     
     .food-container{
+        bottom: 30px;
         margin-inline: 0rem;
     }
 
@@ -605,7 +610,7 @@ nav{
     .even-columns h1{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
-        background-color: yellow;
+        border: 1px solid yellow;
     }
 
     
@@ -628,8 +633,16 @@ nav{
         left: 28%;
     }
 
+    .foods{
+        top: 0px;
+        height: 300px;
+    }
+
+    .food-container{
+        bottom: 80px;
+    }
+
     #pie{
-        bottom: 30px;
         padding-right: 20px;
     }
 }
