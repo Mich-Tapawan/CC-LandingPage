@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
             }
         })
 
-        // Appropriate displaying and hiding of navbar during screen width resizing
         window.addEventListener('resize', ()=>{
+            // Appropriate displaying and hiding of navbar during screen width resizing
             var screenWidth = window.innerWidth;
 
             if (screenWidth > 1095){
@@ -57,29 +57,26 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 navLinks.style.display = 'none';
                 navShown = false;
             }
-        })
 
-    // Review Section - card toggling
-    const reviews =[[{name:'Abel Lazaro', position:'LA Food Critic', main:'Exceptional food and service!', statement:''},
-                     {name:'James Garcia', position:'Michelin Star Chef', main:'Right amount of sweetness.', statement:''},
-                     {name:'David Jonas', position:'GMA Media Star', main:'Excellent and worth it!', statement:''}],
-                    [{name:'', position:'', main:'', statement:''},
-                     {name:'', position:'', main:'', statement:''},
-                     {name:'', position:'', main:'', statement:''}],
-                    [{name:'', position:'', main:'', statement:''}, 
-                     {name:'', position:'', main:'', statement:''},
-                     {name:'', position:'', main:'', statement:''}]]
-
-    const toggleBtn = document.getElementsByClassName('card-btns');
-
-    toggleBtn.forEach(button =>{
-        button.addEventListener('click', ()=>{
-            if(button.id == 'left-btn'){
-                pass
+            // Food Item - Food image swapping
+            if(screenWidth <= 600){
+                let imageSrc = ['src/images/matcha.png', 'src/images/pie.png', 'src/images/donut.png'];
+                let imageHolder = document.getElementById('pie');
+                let counter = 2;
+                
+                let intervalID = setInterval(()=>{
+                    imageHolder.src = imageSrc[counter];
+                    if (counter == (imageSrc.length - 1)){
+                        counter = 0;
+                    }
+                    else{
+                        counter++
+                    }
+                }, 3000);
             }
-            else if (button.id == 'right-btn'){
-                pass
+            else{
+                imageHolder.src = imageSrc[1];
+                counter = 2;
             }
-        })
-    })
+        });
 });
