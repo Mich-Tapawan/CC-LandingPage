@@ -505,15 +505,16 @@ nav{
 @media (max-width: 840px){
 
     header{
-        padding-right: 3rem;
+        padding: 0 3rem;
     }
 
     #nav-logo{
-        font-size: 35px;
+        font-size: 30px;
         font-weight:500;
     }
     
     #nav-logo img{
+        top: 5px;
         width: 70px;
         height: 70px;
         margin-right: 10px;
@@ -546,7 +547,7 @@ nav{
     }
 
     .sec2-texts{
-        padding-inline: 1rem;
+        padding-inline: 3rem;
     }
 
     .sec2-texts h5{
