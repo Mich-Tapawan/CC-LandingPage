@@ -60,24 +60,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     });
 
+    let currentActive = 2;
     let intervalID = setInterval(()=>{
         let matcha = document.querySelector('#matcha');
         let pie = document.querySelector('#pie');
         let donut = document.querySelector('#donut');
-        let currentActive = 2;
-
         if(screenWidth <= 840){
             if (currentActive == 1){
-                matcha.style.display = 'block'
+                matcha.style.display = 'block';
+                pie.style.display = 'none';
+                donut.style.display = 'none';
                 currentActive++;
             }
 
             else if (currentActive == 2){
                 pie.style.display = 'block';
+                matcha.style.display = 'none';
+                donut.style.display = 'none'
                 currentActive++;
             }
             else if (currentActive == 3){
                 donut.style.display = 'block'
+                matcha.style.display = 'none';
+                pie.style.display = 'none';
                 currentActive = 1;
             }
         }
