@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // Navbar - Scrolling Effect
     var header = document.querySelector('header');
     var navLogo = document.querySelector('#nav-logo');
+    var screenWidth = window.innerWidth;
 
     window.addEventListener('scroll', ()=>{
         if(window.scrollY > 0){
@@ -57,13 +58,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 navLinks.style.display = 'none';
                 navShown = false;
             }
+
+            let id = foodSwapping();
+            if(screenWidth > 840){
+                clearInterval(id);
+            }
         });
+
         // Food Item - Food image swapping
-        if(screenWidth <= 400){
+        function foodSwapping(){
+            var screenWidth = window.innerWidth;
             let imageSrc = ['src/images/matcha.png', 'src/images/pie.png', 'src/images/donut.png'];
             let imageHolder = document.getElementById('pie');
             let counter = 2;
-                
+                    
             let intervalID = setInterval(()=>{
                 imageHolder.src = imageSrc[counter];
                 if (counter == (imageSrc.length - 1)){
@@ -73,9 +81,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     counter++
                 }
             }, 3000);
+
+            if(screenWidth > 840){
+                clearInterval(intervalID);
+                imageHolder.src = imageSrc[1];
+                counter = 2;
             }
-        else{
-            imageHolder.src = imageSrc[1];
-            counter = 2;
+            return intervalID
         }
+        
+    let id = foodSwapping();
+    if(screenWidth > 840){
+        clearInterval(id);
+    }
 });
