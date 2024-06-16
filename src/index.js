@@ -31,67 +31,55 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 
     // Navbar - Burger icon display switching for mobile
-        var burger = document.querySelector('#burger');
-        var navLinks = document.querySelector('#nav-links');
-        var navShown = false
+    var burger = document.querySelector('#burger');
+    var navLinks = document.querySelector('#nav-links');
+    var navShown = false
 
-        burger.addEventListener('click', ()=>{
-            if (navShown === false){
-                navLinks.style.display = 'flex';
-                navShown = true;
-            }
-            else{
-                navLinks.style.display = 'none';
-                navShown = false;
-            }
-        })
-
-        window.addEventListener('resize', ()=>{
-            // Appropriate displaying and hiding of navbar during screen width resizing
-            var screenWidth = window.innerWidth;
-
-            if (screenWidth > 1095){
-                navLinks.style.display = 'flex';
-                navShown = false;
-            }
-            else{
-                navLinks.style.display = 'none';
-                navShown = false;
-            }
-
-            let id = foodSwapping();
-            if(screenWidth > 840){
-                clearInterval(id);
-            }
-        });
-
-        // Food Item - Food image swapping
-        function foodSwapping(){
-            var screenWidth = window.innerWidth;
-            let imageSrc = ['src/images/matcha.png', 'src/images/pie.png', 'src/images/donut.png'];
-            let imageHolder = document.getElementById('pie');
-            let counter = 2;
-                    
-            let intervalID = setInterval(()=>{
-                imageHolder.src = imageSrc[counter];
-                if (counter == (imageSrc.length - 1)){
-                    counter = 0;
-                }
-                else{
-                    counter++
-                }
-            }, 3000);
-
-            if(screenWidth > 840){
-                clearInterval(intervalID);
-                imageHolder.src = imageSrc[1];
-                counter = 2;
-            }
-            return intervalID
+    burger.addEventListener('click', ()=>{
+        if (navShown === false){
+            navLinks.style.display = 'flex';
+            navShown = true;
         }
-        
-    let id = foodSwapping();
-    if(screenWidth > 840){
-        clearInterval(id);
-    }
+        else{
+            navLinks.style.display = 'none';
+            navShown = false;
+        }
+    });
+
+    window.addEventListener('resize', ()=>{
+        // Appropriate displaying and hiding of navbar during screen width resizing
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth > 1095){
+            navLinks.style.display = 'flex';
+            navShown = false;
+        }
+        else{
+            navLinks.style.display = 'none';
+            navShown = false;
+        }
+    });
+
+    let intervalID = setInterval(()=>{
+        let matcha = document.querySelector('#matcha');
+        let pie = document.querySelector('#pie');
+        let donut = document.querySelector('#donut');
+        let currentActive = 2;
+
+        if(screenWidth <= 840){
+            if (currentActive == 1){
+                matcha.style.display = 'block'
+                currentActive++;
+            }
+
+            else if (currentActive == 2){
+                pie.style.display = 'block';
+                currentActive++;
+            }
+            else if (currentActive == 3){
+                donut.style.display = 'block'
+                currentActive = 1;
+            }
+        }
+    }, 3000)
 });
