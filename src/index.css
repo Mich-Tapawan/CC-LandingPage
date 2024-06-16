@@ -552,10 +552,6 @@ nav{
     .sec2-texts h5{
         width:auto;
     }
-
-    .foods{
-        bottom: 30px;
-    }
     
     .foods > * {
         max-width: 100%;
@@ -563,19 +559,39 @@ nav{
     }
     
     .food-container{
+        position: absolute;
+        display: inline-block;
+        top: 180vh;
         bottom: 30px;
         margin-inline: 0rem;
     }
 
+    .food-container:nth-child(1){
+        display: block;
+    }
 
     .food-container:nth-child(3){
+        margin-top: 72px;
+    }
+
+    #matcha{
         display: none;
+        width: 20rem;
+        height: 30rem;
+        bottom: 70px;
     }
 
     #pie{
+        display: block;
         width: 20rem;
         height: 20rem;
+        top: 40px;
     }
+
+    #donut{
+        display: none;
+    }
+
 }
 
 @media (max-width: 600px){
