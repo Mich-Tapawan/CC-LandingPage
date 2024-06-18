@@ -46,25 +46,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     });
 
-    window.addEventListener('resize', ()=>{
-        // Appropriate displaying and hiding of navbar during screen width resizing
-        var screenWidth = window.innerWidth;
-
-        if (screenWidth > 1095){
-            navLinks.style.display = 'flex';
-            navShown = false;
-        }
-        else{
-            navLinks.style.display = 'none';
-            navShown = false;
-        }
-    });
-
-    let currentActive = 2;
-    let intervalID = setInterval(()=>{
-        let matcha = document.querySelector('#matcha');
-        let pie = document.querySelector('#pie');
-        let donut = document.querySelector('#donut');
+    function foodSwap(){
         if(screenWidth <= 840){
             if (currentActive == 1){
                 matcha.style.display = 'block';
@@ -86,5 +68,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 currentActive = 1;
             }
         }
-    }, 3000)
+    }
+    
+    let currentActive = 2;
+    let matcha = document.querySelector('#matcha');
+    let pie = document.querySelector('#pie');
+    let donut = document.querySelector('#donut');
+    let intervalID;
+    
+    intervalID = setInterval(()=>{
+        foodSwap();
+    }, 3000);
+    
+    if(screenWidth > 840){
+        clearInterval(intervalID);
+        matcha.style.display = 'block';
+        pie.style.display = 'block';
+        donut.style.display = 'block';
+    }
+    
+    window.addEventListener('resize', ()=>{
+        // Appropriate displaying and hiding of navbar during screen width resizing
+        var screenWidth = window.innerWidth;
+    
+        if (screenWidth > 1095){
+            navLinks.style.display = 'flex';
+            navShown = false;
+        }
+        else{
+            navLinks.style.display = 'none';
+            navShown = false;
+        }
+        clearInterval(intervalID);
+        if(screenWidth > 840){
+            clearInterval(intervalID);
+            matcha.style.display = 'block';
+            pie.style.display = 'block';
+            donut.style.display = 'block';
+        }
+        else{
+            intervalID = setInterval(()=>{
+                foodSwap();
+            }, 3000);
+            matcha.style.display = 'none';
+            pie.style.display = 'block';
+            donut.style.display = 'none';
+        }
+    });
 });
