@@ -289,6 +289,35 @@ nav{
     height: 18rem;
 }
 
+.sec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 800px;
+    background-image: linear-gradient(#E89945, #F3841E);
+}
+
+.review-texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.review-texts svg{
+    left: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.sec3 h1{
+    color: #fff;
+    font-family: 'Lalezar', 'serif';
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
 @media (max-width: 1354px){
 
     .even-columns{
