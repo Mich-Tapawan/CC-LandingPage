@@ -294,7 +294,7 @@ nav{
     flex-direction: column;
     text-align: center;
     max-width: 100%;
-    min-height: 800px;
+    min-height: 700px;
     background-image: linear-gradient(#E89945, #F3841E);
     padding-top: 70px;
 }
@@ -384,6 +384,14 @@ nav{
     color: #4b4b4b;
     font-family: 'Poppins', 'serif';
     text-align: start;
+}
+
+.sec4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 800px;
 }
 
 @media (max-width: 1354px){
