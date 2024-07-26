@@ -296,6 +296,7 @@ nav{
     max-width: 100%;
     min-height: 800px;
     background-image: linear-gradient(#E89945, #F3841E);
+    padding-top: 70px;
 }
 
 .sec3 h1{
@@ -303,6 +304,7 @@ nav{
     font-family: 'Lalezar', 'serif';
     font-size: 40px;
     letter-spacing: 3px;
+    margin-bottom: 50px;
 }
 
 .card-container{
@@ -594,6 +596,11 @@ nav{
         width: 18rem;
         height: 15rem;
     }
+
+    .card-box{
+        width: 45%;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 840px){
@@ -685,6 +692,14 @@ nav{
 
     #donut{
         display: none;
+    }
+
+    .card-box{
+        width: 100%;
+    }
+
+    .sec3 h1{
+        font-size: 2rem;
     }
 
 }
