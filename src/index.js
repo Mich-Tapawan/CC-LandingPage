@@ -86,10 +86,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
         pie.style.display = 'block';
         donut.style.display = 'block';
     }
+
+    // Managing the text content to avoid overflow
+    function aboutUsContent(){
+        var screenWidth = window.innerWidth;
+        var aboutUsText= document.querySelector('.aboutus-text p');
+
+        if(screenWidth > 840){
+            aboutUsText.innerHTML = 'Welcome to Comfy Cafe, your cozy neighborhood haven! Nestled in the heart of the community, Comfy Cafe offers a warm, inviting atmosphere where you can unwind, catch up with friends, or simply enjoy a quiet moment alone. Our mission is to provide a space that feels like an extension of your own living room, but with the added delight of delicious, handcrafted beverages and freshly baked treats. At Comfy Cafe, we are passionate about coffee and committed to sustainability, sourcing our beans from local, organic farms.';
+        }
+        else if(screenWidth > 700){
+            aboutUsText.innerHTML = 'Welcome to Comfy Cafe, your cozy neighborhood haven! Nestled in the heart of the community, Comfy Cafe offers a warm, inviting atmosphere where you can unwind, catch up with friends, or simply enjoy a quiet moment alone. Our mission is to provide a space that feels like an extension of your own living room, but with the added delight of delicious, handcrafted beverages and freshly baked treats.'
+        }
+        else{
+            aboutUsText.innerHTML = 'Welcome to Comfy Cafe, your cozy neighborhood haven! Nestled in the heart of the community, Comfy Cafe offers a warm, inviting atmosphere where you can unwind, catch up with friends, or simply enjoy a quiet moment alone. Our mission is to provide.'
+        }
+    }
+
+    aboutUsContent();
     
     window.addEventListener('resize', ()=>{
-        // Appropriate displaying and hiding of navbar during screen width resizing
+        // Rechecking of triggers once screen width resized
         var screenWidth = window.innerWidth;
+
+        aboutUsContent();
     
         if (screenWidth > 1095){
             navLinks.style.display = 'flex';

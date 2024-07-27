@@ -683,6 +683,17 @@ nav{
         width: 45%;
         padding: 10px;
     }
+
+    .sec4 img{
+        display: none;
+    }
+
+    .aboutus-loc{
+        position: relative;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 @media (max-width: 840px){
@@ -784,6 +795,9 @@ nav{
         font-size: 2rem;
     }
 
+    .aboutus-text p{
+        -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+    }
 }
 
 @media (max-width: 600px){
@@ -857,8 +871,19 @@ nav{
     #pie{
         padding-right: 20px;
     }
-}
 
+    .sec4{
+        padding-bottom: 100px;
+    }
+
+    .sec4 h4{
+        margin-bottom: 20px;
+    }
+
+    .aboutus-loc strong{
+        font-size: 1.5rem;
+    }
+}
 /*
 .sec5{
     width: 100%;
