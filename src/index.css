@@ -478,13 +478,14 @@ nav{
 
 .contact-grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
+    gap: 40px;
 }
 
 .contact-texts{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: #3a2c2c;
 }
 
@@ -505,8 +506,55 @@ nav{
     margin-right: 4px;
 }
 
-.contact-form{
-    border: 1px solid blue;
+.form-box{
+    background-color:#3a2c2c;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.form-box h6{
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #ffffff;
+    font-family: 'Lalezar', 'Serif';
+    letter-spacing: 2px;
+}
+
+.form-box form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+}
+
+.form-box input, textarea{
+    color: white;
+    font-family: 'Poppins', 'Serif';
+    margin-block: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffff;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-box input{
+    height: 60px;
+}
+
+.form-box textarea{
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.form-box button{
+    font-family: 'Lalezar', 'serif';
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    height: 70px;
+    cursor: pointer;
 }
 
 
