@@ -304,7 +304,12 @@ nav{
     font-family: 'Lalezar', 'serif';
     font-size: 40px;
     letter-spacing: 3px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.review-texts svg{
+    width: 60px;
+    margin-bottom: 20px;
 }
 
 .card-container{
@@ -321,6 +326,7 @@ nav{
     background-color: #ffffff;
     padding: 20px;
     margin: 15px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -365,6 +371,7 @@ nav{
 .card-name span{
     color: #979797;
     font-size: 0.8rem;
+    padding-right: 20px;
     font-family: 'Poppins', 'serif';
 }
 
