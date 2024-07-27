@@ -684,6 +684,18 @@ nav{
         padding: 10px;
     }
 
+    .sec4{
+        padding-bottom: 100px;
+    }
+
+    .sec4 h4{
+        margin-bottom: 20px;
+    }
+
+    .sec4 button{
+        margin-bottom: 60px;
+    }
+
     .sec4 img{
         display: none;
     }
@@ -787,6 +799,10 @@ nav{
         display: none;
     }
 
+    .sec3{
+        padding-bottom: 40px;
+    }
+
     .card-box{
         width: 100%;
     }
@@ -870,14 +886,6 @@ nav{
 
     #pie{
         padding-right: 20px;
-    }
-
-    .sec4{
-        padding-bottom: 100px;
-    }
-
-    .sec4 h4{
-        margin-bottom: 20px;
     }
 
     .aboutus-loc strong{
