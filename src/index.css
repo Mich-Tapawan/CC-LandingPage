@@ -295,7 +295,7 @@ nav{
     text-align: center;
     max-width: 100%;
     min-height: 700px;
-    background-image: linear-gradient(#E89945, #F3841E);
+    background-image: linear-gradient(#E89945, #f0a90f);
     padding-top: 70px;
 }
 
@@ -399,6 +399,73 @@ nav{
     align-items: center;
     max-width: 100%;
     min-height: 800px;
+    background-image: url('images/resto.jpg');
+    background-repeat: no-repeat;
+    object-fit:cover;
+    background-size: auto 140%;
+    position: relative;
+    color: #ffffff;
+}
+
+.sec4 img{
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.aboutus-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutus-text h4{
+    font-size: 2rem;
+}
+
+.aboutus-text p{
+    font-family: 'Poppins', 'serif';
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    max-width: 70%;
+}
+
+.aboutus-text button{
+    background-color: transparent;
+    border-radius: 30px;
+    width: 200px;
+    height: 63px;
+    border: 3px solid #ffffff;
+    font-family: 'Lalezar', 'serif';
+    font-size: 26px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.aboutus-text button:hover{
+    background-color: #ffffff;
+    color:#3a2c2c;
+
+}
+
+.aboutus-loc{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.aboutus-loc strong{
+    font-family: 'Poppins', 'serif';
+    font-size: 1.7rem;
+}
+
+.aboutus-loc p{
+    font-family: 'Poppins', 'serif';
+    font-size: 1.2rem;
 }
 
 @media (max-width: 1354px){
@@ -793,175 +860,6 @@ nav{
 }
 
 /*
-
-.sec3{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 900px;
-    padding: 0 5rem;
-    background-image: linear-gradient(#E89945, #F3841E);
-}
-
-.review-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.review-text svg{
-    position: relative;
-    left: 0.5rem;
-    bottom: 5px;
-}
-
-.sec3 h1{
-    color: #fff;
-    font-family: 'Lalezar', 'serif';
-    font-size: 40px;
-    letter-spacing: 3px;
-}
-
-.sec3 button{
-    width: 170px;
-    height: 60px;
-    background-color: white;
-    font-family:'lalezar', 'serif';
-    font-size: 25px;
-    color: #F28824;
-    border-style: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.card-container{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.cards{
-    width: 24%;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 2rem;
-}
-
-.card-btns{
-    cursor: pointer;
-}
-
-.card-upper{
-    display: flex;
-    flex-direction: row;
-    height: 18%;
-}
-
-.card-prof{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    justify-content: center;
-}
-
-.card-upper h4{
-    font-family: 'abeezee','serif'; 
-    font-weight: lighter;
-}
-
-.card-position{
-    color: rgb(151, 150, 150);
-}
-
-.dp{
-    background-color: rgb(145, 145, 145);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.card-desc{
-    height: 82%;
-}
-
-.card-desc h6{
-    font-family: 'Abeezee', 'serif';
-    font-size: 12px;
-    font-weight: lighter;
-    margin-top: 10px;
-}
-
-.ratings{
-    margin-top: 10px;
-    width: 55%;
-}
-
-.card-main{
-    font-family: 'Abeezee', 'serif';
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-.sec4{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 830px;
-    padding: 100px 10rem 0 10rem;
-    margin-top: -100px;
-    position: relative;
-}
-
-.sec4-left{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#shop-img{
-    position: relative;
-    width: 30rem;
-    height: 32rem;
-    object-fit:cover;
-    border: 10px solid #E89945;
-    position: relative;
-    z-index: 100;
-}
-
-.sec4-right{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    align-items:baseline;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-
-.sec4-right h1{
-    font-size: 30px;
-    color: #442F2F;
-    
-}
-
-.sec4-right p{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Abel', 'serif';
-    width: 100%;
-}
-
 .sec5{
     width: 100%;
     height: 1000px;
