@@ -297,6 +297,8 @@ nav{
     min-height: 700px;
     background-image: linear-gradient(#E89945, #f0a90f);
     padding-top: 70px;
+    padding-bottom: 60px;
+    scroll-margin-top: 60px;
 }
 
 .sec3 h1{
@@ -394,6 +396,7 @@ nav{
 }
 
 .sec4{
+    scroll-margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,7 +477,7 @@ nav{
     align-items: center;
     max-width: 100%;
     min-height: 700px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .contact-grid{
