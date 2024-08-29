@@ -1,4 +1,4 @@
 # CC-LandingPage
+Used: HTML, CSS, & Javascript.
 
-A one-page static website that servers as landing page for a Cafe Shop website.
-Languages Used: HTML, CSS, & Vanilla Javascript.
+Description: A one-page static website that serves as a landing page for a main Cafe Shop website.
