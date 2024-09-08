@@ -404,8 +404,7 @@ nav {
   min-height: 800px;
   background-image: url("images/resto.jpg");
   background-repeat: no-repeat;
-  object-fit: cover;
-  background-size: auto 140%;
+  background-size: cover;
   position: relative;
   color: #ffffff;
 }
