@@ -292,13 +292,14 @@ nav {
 .sec3 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   max-width: 100%;
   min-height: 700px;
   background-image: linear-gradient(#e89945, #f0a90f);
   padding-top: 70px;
   padding-bottom: 60px;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 140px;
 }
 
 .sec3 h1 {
@@ -315,11 +316,11 @@ nav {
 }
 
 .card-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+  max-width: 80%;
 }
 
 .card-box {
@@ -401,7 +402,7 @@ nav {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  min-height: 800px;
+  min-height: 100vh;
   background-image: url("images/resto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -471,6 +472,7 @@ nav {
 }
 
 .sec5 {
+  scroll-margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -843,8 +845,12 @@ footer {
     height: 15rem;
   }
 
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
   .card-box {
-    width: 45%;
+    width: 100%;
     padding: 10px;
   }
 
